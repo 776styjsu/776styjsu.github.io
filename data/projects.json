@@ -1,16 +1,16 @@
 [
   {
-    "name": "VLA Spec Checker",
+    "name": "API Jungloid Tool",
     "when": "2025",
-    "description": "Checks VLA plans against generated temporal specifications to avoid unsafe actions.",
+    "description": "Lightweight AST- and graph-based tool for inferring API transformation chains, extended from Java to Rust to study cross-language generality and development tradeoffs.",
     "links": {
-      "code": "https://github.com/yourname/vla-spec-checker"
+      "code": "https://github.com/776styjsu/api-jungle-map"
     }
   },
   {
     "name": "Randoop Enhancements",
-    "when": "2023\u20132025",
-    "description": "Purity-aware generation, invariant-based input synthesis, and mutation coverage tooling for Randoop.",
+    "when": "2023–2025",
+    "description": "Enhanced automated Java test generation with targeted input creation, long-term object state reuse, side-effect filtering, and integrated mutation-based evaluation.",
     "links": {
       "code": "https://github.com/randoop/randoop"
     }
