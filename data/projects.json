@@ -1,0 +1,18 @@
+[
+  {
+    "name": "VLA Spec Checker",
+    "when": "2025",
+    "description": "Checks VLA plans against generated temporal specifications to avoid unsafe actions.",
+    "links": {
+      "code": "https://github.com/yourname/vla-spec-checker"
+    }
+  },
+  {
+    "name": "Randoop Enhancements",
+    "when": "2023\u20132025",
+    "description": "Purity-aware generation, invariant-based input synthesis, and mutation coverage tooling for Randoop.",
+    "links": {
+      "code": "https://github.com/randoop/randoop"
+    }
+  }
+]

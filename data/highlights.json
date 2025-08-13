@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Spec inference for task-level robot safety",
+    "when": "2025",
+    "venue": "Preprint",
+    "summary": "Generating task-specific specifications from language feedback and using them to verify VLA plans."
+  },
+  {
+    "title": "Purity-aware Randoop",
+    "when": "2024",
+    "venue": "Tooling",
+    "summary": "Extended feedback-directed random testing with purity-aware generation and invariant-guided inputs."
+  }
+]

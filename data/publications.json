@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Are We Good at Writing Specs? Task-Specific, Model-Generated Specifications for Safe Robotics",
+    "authors": [
+      "Tian Yu",
+      "Sebastian Elbaum"
+    ],
+    "venue": "Under submission",
+    "year": 2025,
+    "kind": "preprint",
+    "tags": [
+      "spec inference",
+      "robotics safety"
+    ],
+    "links": {
+      "pdf": "assets/papers/specs_preprint.pdf",
+      "code": "https://github.com/yourname/specs"
+    }
+  },
+  {
+    "title": "Scaling Feedback-Directed Random Testing with Learned Heuristics",
+    "authors": [
+      "Tian Yu",
+      "Michael D. Ernst"
+    ],
+    "venue": "Workshop on Automated Testing",
+    "year": 2024,
+    "kind": "conference",
+    "tags": [
+      "testing",
+      "randoop"
+    ],
+    "links": {
+      "pdf": "assets/papers/randoop_heuristics.pdf"
+    }
+  }
+]
