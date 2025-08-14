@@ -2,17 +2,9 @@
   {
     "name": "API Jungloid Tool",
     "when": "2025",
-    "description": "Lightweight AST- and graph-based tool for inferring API transformation chains, extended from Java to Rust to study cross-language generality and development tradeoffs.",
+    "description": "Lightweight AST-based tool for inferring API transformation chains, extended from Java to Rust to study cross-language generality and development tradeoffs.",
     "links": {
-      "code": "https://github.com/776styjsu/api-jungle-map"
-    }
-  },
-  {
-    "name": "Randoop Enhancements",
-    "when": "2023–2025",
-    "description": "Enhanced automated Java test generation with targeted input creation, long-term object state reuse, side-effect filtering, and integrated mutation-based evaluation.",
-    "links": {
-      "code": "https://github.com/randoop/randoop"
+      "GitHub": "https://github.com/776styjsu/api-jungle-map"
     }
   }
 ]

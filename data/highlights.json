@@ -1,11 +1,11 @@
 [
   {
     "title": "Randoop Enhancements",
-    "when": "2023–2025",
+    "when": "2023-2025",
     "venue": "Tooling",
-    "summary": "Enhanced automated Java test generation with targeted input creation, long-term object state reuse, side-effect filtering, and integrated mutation-based evaluation.",
+    "summary": "Enhanced automated Java test generation with better branch exploration, more effective fault detection, and refinements that make the tool easier to use on real-world projects.",
     "links": {
-      "code": "https://github.com/randoop/randoop"
+      "GitHub": "https://github.com/randoop/randoop"
     }
   }
 ]
