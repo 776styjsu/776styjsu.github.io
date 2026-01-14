@@ -9,56 +9,31 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+You can download my full CV as a PDF: [Tian_Yu_CV.pdf](/files/Tian_Yu_CV.pdf)
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Education
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Ph.D. in Computer Science**, University of Virginia, 2025 – present
+  * Advisor: [Sebastian Elbaum](https://www.cs.virginia.edu/~se4ja/)
+* **B.S. in Computer Science**, University of Washington, 2024
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Research Experience
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* **Graduate Research Assistant** — University of Virginia (2025 – present)
+  * Working on program analysis and automated testing for AI/robotic systems
+
+* **Research Assistant** — University of Washington (2023 – 2025)
+  * Worked with Michael D. Ernst on Randoop automated test generation
+  * Contributed enhancements for better branch exploration and fault detection
+
+## Skills
+
+* **Languages:** Java, Python, Rust, C/C++
+* **Areas:** Program analysis, software testing, robotics, machine learning
+* **Tools:** Git, ROS, CARLA simulator
+
+## Publications
+
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
