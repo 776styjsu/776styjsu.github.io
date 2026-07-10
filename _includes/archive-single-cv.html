@@ -12,9 +12,8 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
+<li class="cv-publication">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <li>
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -36,7 +35,10 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
-    </li>
- </article>
-</div>
+    {% if post.citation %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p>
+    {% elsif post.status or post.venue %}
+      <p class="archive__item-excerpt" itemprop="description">{% if post.status %}{{ post.status }}{% endif %}{% if post.status and post.venue %} at {% endif %}{% if post.venue %}<i>{{ post.venue }}</i>{% endif %}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>
+    {% endif %}
+  </article>
+</li>

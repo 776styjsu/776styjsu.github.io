@@ -1,65 +1,121 @@
 ---
+layout: default
 permalink: /
-title: "Hi, I'm Tian 👋"
-author_profile: true
-redirect_from: 
+title:
+description: "Tian Yu is a Computer Science PhD student at the University of Virginia researching runtime assurance for learning-enabled autonomous systems."
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I'm a PhD student in [Computer Science @ UVA](https://engineering.virginia.edu/departments/computer-science), advised by [Sebastian Elbaum](https://www.cs.virginia.edu/~se4ja/). My research interests lie at the intersection of Software Engineering and Autonomous Systems, with a focus on the safety, interpretability, and robustness of AI/robotic systems.
+{% include base_path %}
 
-Previously, I was fortunate to work with [Michael D. Ernst](https://homes.cs.washington.edu/~mernst/) at [UW](https://www.washington.edu/) on improving automated unit test generation using program analysis.
+<main class="simple-home" id="main">
+  <section class="profile-intro" id="about" aria-labelledby="intro-title">
+    <div class="profile-intro__main">
+      <!-- <p class="profile-role">Software engineering · Autonomous systems</p> -->
+      <h1 id="intro-title">Tian Yu <span>余添</span></h1>
 
-## �🔥 News
+      <p>
+        I’m a Computer Science PhD student at the <a href="https://engineering.virginia.edu/departments/computer-science">University of Virginia</a>, advised by <a href="https://www.cs.virginia.edu/~se4ja/">Sebastian Elbaum</a> as part of the <a href="https://less-lab-uva.github.io/">LESS Lab</a>.
+      </p>
 
-- **Jan 2025** — Started PhD in Computer Science at UVA, advised by Sebastian Elbaum
+      <p class="research-statement">
+        My research interests lie in the safety and trustworthiness of learning-enabled autonomous systems (e.g., autonomous vehicles and robots). In particular, I develop techniques that make these systems subject to meaningful verification and intervention as they operate in complex, real-world environments.
+      </p>
 
-<!-- ## �🎓 Publications -->
+      <p>
+        Previously, I obtained a B.S. in Computer Science from the <a href="https://www.washington.edu">University of Washington</a>, where I was privileged to work with <a href="https://homes.cs.washington.edu/~mernst/">Michael D. Ernst</a> on using program analysis to improve automated test generation.
+      </p>
 
-<!-- ## �️ Research Projects
+    </div>
 
-### Frame-to-Frame Attribution Instability
-**2025 • Rotation Project**
+    <aside class="profile-facts" aria-label="Research profile">
+      <figure class="profile-placeholder">
+        <img src="{{ base_path }}/images/miku_plush.png" alt="A smiling Hatsune Miku plush sitting in front of dried flowers" width="940" height="940">
+        <figcaption>My Miku fufu filling in for me until I get a real headshot.</figcaption>
+      </figure>
+      <div>
+      <ul
+        class="profile-links"
+        aria-label="Profile links"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          gap: 12px;
+        "
+      >
+        <li>
+          <a
+            href="mailto:{{ site.author.email }}"
+            style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;"
+          >
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span>Email</span>
+          </a>
+        </li>
 
-Studied how saliency maps (visual explanations) in self-driving AI change over time. Found that these explanations can flicker erratically even when the car drives smoothly—revealing a gap between what the AI "sees" and how it actually performs.
+        <li>
+          <a
+            href="{{ base_path }}/files/Tian_Yu_CV.pdf"
+            style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;"
+          >
+            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+            <span>CV</span>
+          </a>
+        </li>
 
-![Demo showing saliency map instability in autonomous driving](/images/fai_demo.gif)
+        <li>
+          <a
+            href="https://github.com/{{ site.author.github }}"
+            style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;"
+          >
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+        </li>
 
-[📄 Read the Paper](/files/CS_6190_Rotation_Report.pdf)
+        <li>
+          <a
+            href="https://www.linkedin.com/in/{{ site.author.linkedin }}/"
+            style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;"
+          >
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </aside>
+  </section>
 
----
+  <section class="home-list" id="news" aria-labelledby="news-title">
+    <header class="home-list__header">
+      <h2 id="news-title">🔥 News</h2>
+    </header>
+    <ul class="news-list">
+      <li>
+        <time datetime="2025-08">2025.08</time>
+        <span>Started my PhD in Computer Science at UVA, advised by Sebastian Elbaum.</span>
+      </li>
+      <li>
+        <time datetime="2025-06">2025.06</time>
+        <span>Graduated with a B.S. in Computer Science from the University of Washington.</span>
+      </li>
+    </ul>
+  </section>
 
-### Randoop Enhancements
-**2023–2025 • Tooling**
+  <section class="home-list" id="work" aria-labelledby="work-title">
+    <header class="home-list__header">
+      <h2 id="work-title">📑 Selected work</h2>
+      <a href="{{ base_path }}/publications/">All publications <span aria-hidden="true">→</span></a>
+    </header>
 
-Enhanced automated Java test generation with better branch exploration, more effective fault detection, and refinements that make the tool easier to use on real-world projects.
-
-[🔗 View on GitHub](https://github.com/randoop/randoop)
-
-**Key Contributions:**
-- **Detective**: Implemented demand-driven generation strategies.
-- **Impurity**: Developed an impurity fuzzer targeting constants and Objects.
-- **Elephant Brain**: Enhanced type casting capabilities.
-
-[📄 Read the Paper](/files/GRT_Program-Analysis-Guided_Random_Testing_T.pdf)
-
----
-
-### API Jungloid Tool
-**2025 • Project**
-
-Lightweight AST-based tool for inferring API transformation chains, extended from Java to Rust to study cross-language generality and development tradeoffs.
-
-[🔗 View on GitHub](https://github.com/776styjsu/api-jungle-map) | [📄 Read the Paper](/files/jungloid-paper.pdf)
-
---- -->
-
-
-
-## 📧 Contact
-
-- **Email:** [buc9hh@virginia.edu](mailto:buc9hh@virginia.edu)
-- **GitHub:** [776styjsu](https://github.com/776styjsu/)
-- **LinkedIn:** [tian-yu-89109720a](https://www.linkedin.com/in/tian-yu-89109720a/)
-- **CV:** [📄 Download CV (PDF)](/files/Tian_Yu_CV.pdf)
+    <p class="publication-placeholder">Papers under review. Details coming soon.</p>
+  </section>
+</main>
