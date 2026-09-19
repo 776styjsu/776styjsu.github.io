@@ -1,0 +1,28 @@
+{% assign paper_heading = include.heading | default: 'h3' %}
+<article class="paper{% if include.paper.thumbnail %} paper--with-thumbnail{% endif %}" aria-labelledby="{{ include.paper.id }}-title">
+  {% if include.paper.thumbnail %}
+  <a class="paper__thumbnail" href="{{ include.paper.thumbnail | relative_url }}" aria-label="View the figure for {{ include.paper.short_title | escape }} at full size">
+    <img src="{{ include.paper.thumbnail | relative_url }}" alt="{{ include.paper.thumbnail_alt | escape }}" width="{{ include.paper.thumbnail_width }}" height="{{ include.paper.thumbnail_height }}" loading="lazy" decoding="async">
+  </a>
+  {% endif %}
+  <div class="paper__body">
+    <{{ paper_heading }} class="paper__title" id="{{ include.paper.id }}-title"><a href="{{ include.paper.paper }}">{{ include.paper.title }}</a></{{ paper_heading }}>
+    <p class="paper__authors">{{ include.paper.authors | replace: 'Tian Yu', '<strong>Tian Yu</strong>' }}</p>
+    <p class="paper__venue"><em>{{ include.paper.status }}, {{ include.paper.year }}</em></p>
+    <div class="paper__links">
+      <a href="{{ include.paper.paper }}">Paper<span class="sr-only"> (PDF)</span></a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ include.paper.code }}">Code</a>
+    </div>
+    <p class="paper__summary">{{ include.paper.summary }}</p>
+    {% if include.details %}<p class="paper__finding">{{ include.paper.finding }}</p>{% endif %}
+    {% if include.details %}
+    <details class="citation">
+      <summary>BibTeX citation</summary>
+      <pre id="citation-{{ include.paper.id }}"><code>{{ include.paper.bibtex | escape }}</code></pre>
+      <button class="copy-citation" type="button" data-copy="citation-{{ include.paper.id }}" hidden>Copy citation</button>
+      <span class="copy-status" role="status"></span>
+    </details>
+    {% endif %}
+  </div>
+</article>

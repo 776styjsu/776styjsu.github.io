@@ -1,0 +1,35 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+  <body class="personal-site{% if page.url == '/' %} personal-site--home{% endif %}">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        {% unless page.url == '/' %}<a class="wordmark" href="{{ '/' | relative_url }}">Tian Yu</a>{% endunless %}
+        <nav class="primary-nav" aria-label="Main navigation">
+          {% for link in site.data.navigation.main %}
+            {% assign active = false %}
+            {% if page.url == link.url %}{% assign active = true %}{% endif %}
+            {% if page.url == '/' and link.url == '/#about' %}{% assign active = true %}{% endif %}
+            <a href="{{ link.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ link.title }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" tabindex="-1">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <p>© {{ site.time | date: '%Y' }} Tian Yu · University of Virginia</p>
+    </footer>
+    <script src="{{ '/assets/js/personal.js' | relative_url }}" defer></script>
+  </body>
+</html>

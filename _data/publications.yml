@@ -1,0 +1,23 @@
+- id: drive-the-thoughts
+  title: "Drive the Thoughts: Runtime Monitoring of VLA Reasoning-Trajectory Consistency"
+  short_title: "Drive the Thoughts"
+  subtitle: "Runtime Monitoring of VLA Reasoning-Trajectory Consistency"
+  authors: "Tian Yu, Lu Feng, and Sebastian Elbaum"
+  year: 2026
+  status: "Manuscript under review"
+  paper: "https://arxiv.org/pdf/2608.29583"
+  code: "https://github.com/776styjsu/drive-the-thoughts"
+  thumbnail: "/images/publications/drive-the-thoughts.png"
+  thumbnail_alt: "Lane-relative monitoring distinguishes following a curved lane from a lane change that contradicts the model’s stated reasoning."
+  thumbnail_width: 2048
+  thumbnail_height: 959
+  summary: "Can a driving model’s reasoning tell us what it should do next? We study whether vision-language-action (VLA) models’ reasoning can serve as a specification for monitoring their planned trajectories."
+  finding: "A benchmark of 150 manually annotated reasoning–trajectory pairs; lane-relative monitors achieve an F1 score of 0.75 for inconsistency detection, 0.13 above the strongest baseline."
+  bibtex: |
+    @unpublished{yu2026drivethethoughts,
+      title = {Drive the Thoughts: Runtime Monitoring of {VLA} Reasoning-Trajectory Consistency},
+      author = {Yu, Tian and Feng, Lu and Elbaum, Sebastian},
+      year = {2026},
+      note = {Manuscript under review},
+      url = {https://arxiv.org/abs/2608.29583}
+    }
