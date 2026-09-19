@@ -1,12 +1,11 @@
 ---
-layout: archive
+layout: personal
 title: "Publications"
 permalink: /publications/
-author_profile: false
+description: "Publications and preprints by Tian Yu on testing and runtime monitoring for AI-enabled autonomous systems."
 ---
 
-<p class="page-intro">Research on runtime assurance, software testing, and the behavior of learning-enabled autonomous systems.</p>
-
-{% include base_path %}
-
-<p class="publication-placeholder">Papers under review. Details coming soon.</p>
+<header class="page-heading"><h1>Publications</h1><p>Research on testing and runtime monitoring for AI-enabled autonomous systems.</p></header>
+<div class="publication-list">
+  {% for paper in site.data.publications %}{% include personal-publication.html paper=paper details=true heading='h2' %}{% endfor %}
+</div>

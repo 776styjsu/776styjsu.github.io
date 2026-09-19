@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Tian Yu"
 title_separator          : "-"
 name                     : &name "Tian Yu (余添)"
-description              : &description "PhD student in Computer Science at University of Virginia, working on program analysis, testing, and robotics."
+description              : &description "Tian Yu is a Computer Science PhD student at the University of Virginia developing testing and runtime monitoring methods for AI-enabled autonomous systems."
 url                      : https://776styjsu.github.io
 baseurl                  : ""
 repository               : "776styjsu/776styjsu.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Tian Yu (余添)"
   pronouns         : "he/him"  
-  bio              : "PhD student @ UVA. Program analysis, testing, and robotics."
+  bio              : "PhD student @ UVA. Testing and runtime monitoring for AI-enabled autonomous systems."
   location         : "Charlottesville, VA"
   employer         : "University of Virginia"
   uri              : # URL

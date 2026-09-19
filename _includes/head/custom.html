@@ -2,15 +2,22 @@
 
 <!-- start custom head snippets -->
 
-<!-- Editorial type system -->
+{% if page.layout == 'personal' %}
+<!-- Load only the two name characters on systems without a Chinese font. -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&amp;text=%E4%BD%99%E6%B7%BB&amp;display=swap" rel="stylesheet">
+{% endif %}
+
+{% unless page.layout == 'personal' %}
+<!-- Fonts and theme support for the archive layouts. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
 
 <!-- Apply the saved theme before paint to avoid a flash of the wrong theme. -->
 <script>
   (function () {
-    var savedTheme = localStorage.getItem('theme');
+    var savedTheme;
+    try { savedTheme = localStorage.getItem('theme'); } catch (e) { /* Storage may be unavailable. */ }
     var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (savedTheme === 'dark' || ((savedTheme === 'system' || !savedTheme) && prefersDark)) {
       document.documentElement.setAttribute('data-theme', 'dark');
@@ -25,6 +32,7 @@
 <!-- Support for Font Awesome -->
  <link rel="preload" href="{{ base_path }}/assets/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ base_path }}/assets/css/fontawesome.css"></noscript>
+{% endunless %}
 
 <!-- Turtle-shell site mark -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
@@ -32,7 +40,11 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="shortcut icon" type="image/x-icon" href="{{ base_path }}/favicon.ico"/>
-<meta name="theme-color" content="#f5f4ef" media="(prefers-color-scheme: light)"/>
-<meta name="theme-color" content="#111816" media="(prefers-color-scheme: dark)"/>
+{% if page.layout == 'personal' %}
+<meta name="theme-color" content="#ffffff"/>
+{% else %}
+<meta name="theme-color" content="#f8f7f3" media="(prefers-color-scheme: light)"/>
+<meta name="theme-color" content="#171d1a" media="(prefers-color-scheme: dark)"/>
+{% endif %}
 
 <!-- end custom head snippets -->
