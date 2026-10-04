@@ -11,15 +11,16 @@ redirect_from:
 <section class="intro" id="about" aria-labelledby="intro-title">
   <div class="intro__text">
     <h1 id="intro-title">Tian Yu <span lang="zh">余添</span></h1>
+    <div class="profile-links" aria-label="Profile links">
+      <a href="mailto:{{ site.author.email }}" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+      <a href="{{ '/files/Tian_Yu_CV.pdf' | relative_url }}" aria-label="CV (PDF)" title="CV (PDF)"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i></a>
+      <a href="{{ site.author.googlescholar | escape }}" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
+      <a href="https://github.com/{{ site.author.github }}" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+    </div>
     <p>I’m a Ph.D. student in Computer Science at the <a href="https://engineering.virginia.edu/departments/computer-science">University of Virginia</a>, advised by <a href="https://www.cs.virginia.edu/~se4ja/">Sebastian Elbaum</a> in the <a href="https://less-lab-uva.github.io/">LESS Lab</a>.</p>
     <p>I develop testing and runtime monitoring methods for AI-enabled autonomous systems, currently autonomous driving models, using their reasoning and behavior to identify failures and assess safety.</p>
     <p>Previously, I studied Computer Science at the University of Washington and worked with <a href="https://homes.cs.washington.edu/~mernst/">Michael D. Ernst</a> on program analysis for automated test generation.</p>
-    <div class="profile-links" aria-label="Profile links">
-      <a href="mailto:{{ site.author.email }}">Email</a><span aria-hidden="true">/</span>
-      <a href="{{ '/files/Tian_Yu_CV.pdf' | relative_url }}">CV<span class="sr-only"> (PDF)</span></a><span aria-hidden="true">/</span>
-      <a href="https://github.com/{{ site.author.github }}">GitHub</a><span aria-hidden="true">/</span>
-      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">LinkedIn</a>
-    </div>
   </div>
   <figure class="portrait">
     <img src="{{ '/images/miku_plush.png' | relative_url }}" alt="A smiling Hatsune Miku plush sitting in front of dried flowers" width="940" height="940" fetchpriority="high">

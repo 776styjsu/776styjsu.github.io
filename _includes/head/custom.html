@@ -2,6 +2,11 @@
 
 <!-- start custom head snippets -->
 
+{% if page.url == '/' %}
+<link rel="stylesheet" href="{{ '/assets/css/fontawesome.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url }}">
+{% endif %}
+
 {% if page.layout == 'personal' %}
 <!-- Load only the two name characters on systems without a Chinese font. -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&amp;text=%E4%BD%99%E6%B7%BB&amp;display=swap" rel="stylesheet">

@@ -34,7 +34,7 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL
-  googlescholar    : # URL - add when available
+  googlescholar    : "https://scholar.google.com/citations?user=hrTb1SMAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : # URL - add when available
